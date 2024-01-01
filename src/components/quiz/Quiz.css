@@ -1,0 +1,19 @@
+.quizContainer {
+    position: absolute;
+    top: 140px;
+    left: 220px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+/*
+.btn-dark{
+    background-color: #0497CA !important;
+}
+
+.btn-dark:hover {
+    background-color: #0D81AA !important;
+    color: #202121  !important;
+}
+*/

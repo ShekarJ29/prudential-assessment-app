@@ -1,0 +1,33 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #07639d;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.companyLogo {
+  position: absolute;
+  top: 10px;
+  left: 400px;
+}
+
+.companyHeader {
+  position: absolute;
+  top: 40px;
+  left: 515px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.titleHeader {
+  position: absolute;
+  top: 44px;
+  left: 700px;
+  font-size: 30px;
+  font-weight: 350;
+}
