@@ -8,11 +8,13 @@ import Quiz from './components/quiz/Quiz';
 import Result from './components/result/Result';
 import * as Constants from './components/Data'
 import { DataProvider } from './components/dataContext/dataContext';
+import MenuComponent from "./components/menu/MenuComponent";
 
 export default function App() {
   return (
     <div className="App">
       <Header company={Constants.HEADER_COMPANY} title={Constants.HEADER_TITLE} />
+      <MenuComponent/>
       <DataProvider>
         <Start />
         <Quiz />
