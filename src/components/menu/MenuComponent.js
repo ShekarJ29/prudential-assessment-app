@@ -1,19 +1,19 @@
-import { Menu, MenuItem, MenuButton, SubMenu } from '@szhsin/react-menu';
-import "./MenuComponent.css";
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import './MenuComponent.css'
 
-const MenuComponent = () => {
-    return (
-        <Menu menuButton={<MenuButton className="menuItem">Home</MenuButton>}>
-            {/* <MenuItem>New File</MenuItem>
-            <MenuItem>Save</MenuItem>
-            <SubMenu label="Edit">
-                <MenuItem>Cut</MenuItem>
-                <MenuItem>Copy</MenuItem>
-                <MenuItem>Paste</MenuItem>
-            </SubMenu>
-            <MenuItem>Print...</MenuItem> */}
-        </Menu>
-    );
+function MenuComponent() {
+  return (
+    <div className='navbar-nav-div'>
+      <Navbar bg="dark" data-bs-theme="dark">
+          <Nav>
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#registration">Registration</Nav.Link>
+            <Nav.Link href="#login">Login</Nav.Link>
+          </Nav>
+      </Navbar>
+      </div>
+  );
 }
 
 export default MenuComponent;
