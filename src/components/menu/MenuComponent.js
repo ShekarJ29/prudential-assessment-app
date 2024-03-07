@@ -3,10 +3,13 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  NavLink,
+  NavLink
 } from "react-router-dom";
 import Start from '../start/Start';
-
+import Home from '../home/Home';
+import Login from "../login/Login"
+import Regi from "../regi/Regi";
+import AddCandidate from "../addCandidate/AddCandidate"
 function MenuComponent() {
   return (
     <div className='navbar-nav-div'>
@@ -22,7 +25,7 @@ function MenuComponent() {
                 >
                     <div style={{ margin: "10px" }}>
                         <NavLink
-                            to="/"
+                            to="/home"
                             style={({ isActive }) => ({
                                 color: isActive
                                     ? "grey"
@@ -36,7 +39,7 @@ function MenuComponent() {
                     </div>
                     <div style={{ margin: "10px" }}>
                         <NavLink
-                            to="/demo"
+                            to="/registration"
                             style={({ isActive }) => ({
                                 color: isActive
                                     ? "grey"
@@ -50,7 +53,7 @@ function MenuComponent() {
                     </div>
                     <div style={{ margin: "10px" }}>
                         <NavLink
-                            to="/demo"
+                            to="/login"
                             style={({ isActive }) => ({
                                 color: isActive
                                     ? "grey"
@@ -66,18 +69,23 @@ function MenuComponent() {
                 <Routes>
                     <Route
                         exact
-                        path="/"
-                        element={<Start />}
+                        path="/home"
+                        element={<Home />}
                     />
                     <Route
                         exact
-                        path="/demo"
-                        element={<Start />}
+                        path="/registration"
+                        element={< Regi/>}
                     />
                     <Route
                         exact
-                        path="/demo"
-                        element={<Start />}
+                        path="/login"
+                        element={<Login />}
+                    />
+                    <Route
+                        exact
+                        path="/addCandidate"
+                        element={<AddCandidate />}
                     />
                 </Routes>
             </BrowserRouter>
