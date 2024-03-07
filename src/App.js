@@ -16,7 +16,6 @@ export default function App() {
       <Header company={Constants.HEADER_COMPANY} title={Constants.HEADER_TITLE} />
       <MenuComponent/>
       <DataProvider>
-        <Start />
         <Quiz />
         <Result />
       </DataProvider>
